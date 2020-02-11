@@ -15,10 +15,27 @@ digitalWrite(LED_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   digitalWrite(LED_PIN, LOW);    // turn the LED off by making the voltage LOW
   delay(delayTime);
 }
+
+void dimmer(int freq, int duty) {
+  int period, onTime, offTime;
+  period = 1000/freq;
+  onTime = period * duty / 100;
+  offTime = period - onTime;
+  digitalWrite(LED_PIN, HIGH);
+  delay(onTime);
+  digitalWrite(LED_PIN, LOW);
+  delay(offTime);
+}
     
 void loop() {
+
+  int dimTime = 10;
   // put your main code here, to run repeatedly:
-timedBlink(250);
-timedBlink(500);
-timedBlink(1000);
+for(int i = 0; i < 100; i++){
+  dimmer(dimTime, i);
+}
+
+for(int i = 100; i>0; i--){
+  dimmer(dimTime, i);
+}
 }
