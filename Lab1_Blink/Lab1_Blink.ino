@@ -29,7 +29,7 @@ void dimmer(int freq, int duty) {
     
 void loop() {
 
-  int dimTime = 100;
+  int dimTime = 10;
   // put your main code here, to run repeatedly:
 for(int i = 0; i < 100; i++){
   dimmer(dimTime, i);
