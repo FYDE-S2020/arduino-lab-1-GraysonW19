@@ -66,13 +66,13 @@ Team Number:
 ## Screenshots
 
 Procedure A, step 1:
-![Put path to your image here ->](img/Lab1_Blink.png)
+![Put path to your image here ->](img/Lab1_Blink.jpg)
 
 Procedure A, step 4:
-![Put path to your image here ->](img/breathe.png)
+![Put path to your image here ->](img/breathe.jpg)
 
 Procedure B, UART:
-![Put path to your image here ->](img/UART Example.png)
+![Put path to your image here ->](img/UART Example.jpg)
 
 Procedure B, SPI:
-![Put path to your image here ->](img/SPI Example.png)
+![Put path to your image here ->](img/SPI Example.jpg)
